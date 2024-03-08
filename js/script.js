@@ -16,8 +16,14 @@ function myButtonClicked() {
 
   // Use Heron's formula to calculate the area of the triangle
   const area = Math.sqrt(s * ((s - sidea) * (s - sideb) * (s - sidec)))
+  const roundarea = Math.round(area)
   const perimeter = s * 2
 
-  document.getElementById("answer").innerHTML = "Area is: " + area + " cm²"
-  document.getElementById("perimeter").innerHTML = "Perimeter is: " + perimeter + " cm"
+  if(area !== area) {
+    document.getElementById("answer").innerHTML = "Area is not a number"
+}
+else {
+    document.getElementById("answer").innerHTML = "Area is: " + roundarea + " cm²"
+}
+document.getElementById("perimeter").innerHTML = "Perimeter is: " + perimeter + " cm"
 }
