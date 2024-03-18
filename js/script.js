@@ -16,7 +16,7 @@ function myButtonClicked() {
 
   // Use Heron's formula to calculate the area of the triangle
   const area = Math.sqrt(s * ((s - sidea) * (s - sideb) * (s - sidec)))
-  const roundarea = Math.round(area)
+  const roundarea = Math.round(area * 100) / 100
   const perimeter = s * 2
 
   if(area !== area) {
