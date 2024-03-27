@@ -17,3 +17,4 @@ This site can be found at: [https://MTHS-ICD2O-1-2023.github.io/ICD2O-Assignment
   - ⚙ Settings
   - 🗔 Pages
     - then from the "Deploy from a branch ▼" button, select "GitHub Actions"
+php -S 0.0.0.0:8000

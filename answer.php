@@ -30,26 +30,24 @@
         <img src="./images/Triangle_700.svg" alt="Triangle image" />
       </div>
       <div class="page-content-php">
-        <div id="triangle-info">
-          <?php
-          $sideA = $_POST["side-a"];
-          $sideB = $_POST["side-b"];
-          $sideC = $_POST["side-c"];
+        <?php
+        $sideA = $_GET["side-a"];
+        $sideB = $_GET["side-b"];
+        $sideC = $_GET["side-c"];
 
-          $semiPerimeter = ($sideA + $sideB + $sideC) / 2;
+        $semiPerimeter = ($sideA + $sideB + $sideC) / 2;
 
-          $area = sqrt($semiPerimeter * ($semiPerimeter - $sideA) * ($semiPerimeter - $sideB) * ($semiPerimeter - $sideC));
-          $roundArea = round($area, $precision = 2, $mode = PHP_ROUND_HALF_UP);
-          $perimeter = $semiPerimeter * 2;
+        $area = sqrt($semiPerimeter * ($semiPerimeter - $sideA) * ($semiPerimeter - $sideB) * ($semiPerimeter - $sideC));
+        $roundArea = round($area, $precision = 2, $mode = PHP_ROUND_HALF_UP);
+        $perimeter = $semiPerimeter * 2;
 
-          if ($area != $area) {
-            echo "Area is not a number";
-          } else {
-            echo "Area is: " . $roundArea . " cm²";
-          }
-          echo "Perimeter is: " . $perimeter . " cm";
-          ?>
-        </div>
+        if ($area != $area) {
+          echo "Area is not a number";
+        } else {
+          echo "Area is: " . $area . " cm²";
+        }
+        echo ", Perimeter is: " . $perimeter . " cm";
+        ?>
       </div>
     </main>
   </div>
