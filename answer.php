@@ -44,7 +44,7 @@
         if ($area != $area) {
           echo "Area is not a number";
         } else {
-          echo "Area is: " . $area . " cm²";
+          echo "Area is: " . $roundArea . " cm²";
         }
         echo ", Perimeter is: " . $perimeter . " cm";
         ?>

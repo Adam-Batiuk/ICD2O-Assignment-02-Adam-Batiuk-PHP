@@ -35,7 +35,7 @@
         <form action="answer.php" method="GET">
           <div class="mdl-textfield mdl-js-textfield">
             <!-- input pattern attribute -->
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="side-a" />
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="side-a" />
             <!-- mdl-textfield__label -->
             <label class="mdl-textfield__label" for="side-a">Length Of Side a ... (cm)</label>
             <!-- class "mdl-textfield__error" -->
@@ -44,7 +44,7 @@
           <br />
           <div class="mdl-textfield mdl-js-textfield">
             <!-- input pattern attribute -->
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="side-b" />
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="side-b" />
             <!-- mdl-textfield__label -->
             <label class="mdl-textfield__label" for="side-b">Length Of Side b ... (cm)</label>
             <!-- class "mdl-textfield__error" -->
@@ -54,7 +54,7 @@
           <!-- Simple Textfield for length of side c-->
           <div class="mdl-textfield mdl-js-textfield">
             <!-- input pattern attribute -->
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="side-c" />
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="side-c" />
             <!-- mdl-textfield__label -->
             <label class="mdl-textfield__label" for="side-c">Length Of Side c ... (cm)</label>
             <!-- class "mdl-textfield__error" -->
